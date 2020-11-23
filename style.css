@@ -1,0 +1,234 @@
+:root {
+  /*PRIMARY COLOR(S) */
+  --pink: hsl(322, 100%, 66%);
+  /*NEUTRAL COLORS */
+  --very-pale-cyan: hsl(193, 100%, 96%);
+  --very-dark-cyan: hsl(192, 100%, 9%);
+  --grayish-blue: hsl(208, 11%, 55%);
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+header {
+  background-image: url("images/bg-hero-desktop.svg");
+  background-color: var(--very-pale-cyan);
+  background-repeat: no-repeat;
+}
+header ul {
+  display: flex;
+  padding-top: 2rem;
+}
+.Last-Item {
+  margin-left: auto;
+  list-style-type: none;
+}
+.Last-Item button {
+  color: rgb(83, 63, 63);
+}
+img {
+  max-width: 100%;
+}
+li img {
+  margin-left: 2rem;
+}
+.section-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.btn-1 {
+  width: 12vw;
+  margin-right: 1.5rem;
+
+  border: 2px solid var(--Pink);
+  border-radius: 20px;
+  background: #ffffff;
+  box-shadow: 0.3125rem 0.125rem 1rem -0.1875rem var(--very-dark-cyan);
+  padding: 0.4rem;
+  cursor: pointer;
+}
+
+button:hover,
+button:focus {
+  box-shadow: 0 0.5rem 0.9rem -0.2rem; /*var(--pink); */
+  transform: translateY(-0.5rem);
+  opacity: 90%;
+}
+
+.btn-2 {
+  background-color: var(--pink);
+
+  border: 2px solid var(--pink);
+  border-radius: 10px;
+
+  font-family: "Poppins", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-top: 2rem;
+  color: #ffffff;
+}
+button btn-2 {
+  padding-top: 4rem;
+}
+.sectiontext {
+  padding-top: 4rem;
+  margin-left: 2rem;
+}
+.sectiontext h1 {
+  font-family: "Poppins", sans-serif;
+}
+.sectiontext p {
+  font-family: "Open Sans", sans-serif;
+  padding-top: 2rem;
+}
+main {
+  width: 100vw;
+}
+main img {
+  width: 30vw;
+}
+.text {
+  text-align: center;
+  margin-top: 4.5rem;
+}
+.text p {
+  font-family: "Open Sans", sans-serif;
+  font-weight: lighter;
+}
+.section-a {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  box-shadow: 0 0 2rem -0.375rem var(--grayish-blue);
+  border-radius: 0.625rem;
+  margin: 5rem 3rem 0 3rem;
+}
+.section-b {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  box-shadow: 0 0 2rem -0.375rem var(--grayish-blue);
+  border-radius: 0.625rem;
+  margin: 5rem 3rem 0 3rem;
+}
+.section-c {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  box-shadow: 0 0 2rem -0.375rem var(--grayish-blue);
+  border-radius: 0.625rem;
+  margin: 5rem 3rem 0 3rem;
+}
+
+.footer {
+  color: var(--very-pale-cyan);
+  margin: 0 auto;
+  padding: 5rem;
+  background-color: var(--very-dark-cyan);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 12rem;
+}
+
+.foot-col-one {
+  grid-column: 1 / 2;
+}
+
+.foot-col-two {
+  grid-column: 2 / 3;
+  display: flex;
+  align-items: space-around;
+}
+
+.foot-col-three {
+  grid-column: 3 / 4;
+}
+
+.foot-logo img {
+  filter: brightness(0%) invert(100%);
+  margin-bottom: 1rem;
+}
+
+ul {
+  list-style-type: none;
+}
+ul li {
+  text-decoration: none;
+  color: var(--very-pale-cyan);
+}
+.list-one {
+  margin-left: 3rem;
+}
+.box-section {
+  background-color: #ffffff;
+  position: absolute;
+  z-index: 10;
+
+  box-shadow: 0 0 1rem -0.375rem var(--grayish-blue);
+  border-radius: 1.25rem;
+  text-align: center;
+  color: var(--very-dark-cyan);
+
+  transform: translate(90%, 5rem);
+  transform-origin: center;
+
+  padding: 3.125rem;
+}
+
+/* MEDIA QUERY */
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) {
+  header {
+    background-image: url("images/bg-hero-desktop.svg");
+    background-color: var(--very-pale-cyan);
+  }
+  header ul {
+    display: flex;
+    flex-direction: space-between;
+    padding-top: 2rem;
+  }
+  header ul li img {
+    width: 30vw;
+  }
+  .btn-1 {
+    width: 130px;
+    margin-right: 1.5rem;
+    margin-bottom: 2.5rem;
+    border: 1px solid var(--Pink);
+    border-radius: 20px;
+    background: #ffffff;
+    box-shadow: 0.3rem 0.1rem 1rem -0.1875rem var(--very-dark-cyan);
+    padding: 0.4rem;
+    cursor: pointer;
+  }
+  .Last-Item {
+    margin-left: auto;
+    list-style-type: none;
+  }
+  .Last-Item button {
+    color: rgb(83, 63, 63);
+  }
+  img {
+    max-width: 100%;
+  }
+  li img {
+    margin-left: 2rem;
+  }
+  .section-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .box-section {
+    background-color: #ffffff;
+    position: absolute;
+    z-index: 10;
+
+    box-shadow: 0 0 1rem -0.375rem var(--grayish-blue);
+    border-radius: 1.25rem;
+    text-align: center;
+    color: var(--very-dark-cyan);
+
+    transform: translate(0.75%, 2rem);
+    transform-origin: center;
+
+    padding: 3.125rem;
+  }
+}
